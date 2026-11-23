@@ -1,0 +1,43 @@
+{
+  "name": "senjaropay-mcp",
+  "version": "1.0.0",
+  "description": "SenjaroPay MCP server — AI grounding for SenjaroPay merchant payment APIs.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "senjaropay-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "DECISIONS.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepack": "npm run build",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "keywords": [
+    "senjaropay",
+    "mcp",
+    "payments",
+    "tanzania",
+    "mobile-money"
+  ],
+  "author": "SenjaroPay",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "axios": "^1.20.0",
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

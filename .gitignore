@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.*
+*.log
+.DS_Store
+# dist/ is committed so `npx github:…` works without a local TypeScript build
