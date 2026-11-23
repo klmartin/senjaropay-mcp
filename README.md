@@ -22,7 +22,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "senjaropay": {
       "command": "npx",
-      "args": ["-y", "github:YOUR_ORG/senjaropay-mcp"]
+      "args": ["-y", "github:klmartin/senjaropay-mcp"]
     }
   }
 }
@@ -33,7 +33,7 @@ Add to `claude_desktop_config.json`:
 1. **Settings → MCP → Add New MCP Server**
 2. Name: `senjaropay`
 3. Type: `command`
-4. Command: `npx -y github:YOUR_ORG/senjaropay-mcp`
+4. Command: `npx -y github:klmartin/senjaropay-mcp`
 
 Or in `.cursor/mcp.json`:
 
@@ -42,7 +42,7 @@ Or in `.cursor/mcp.json`:
   "mcpServers": {
     "senjaropay": {
       "command": "npx",
-      "args": ["-y", "github:YOUR_ORG/senjaropay-mcp"]
+      "args": ["-y", "github:klmartin/senjaropay-mcp"]
     }
   }
 }
@@ -55,7 +55,7 @@ Or in `.cursor/mcp.json`:
   "mcpServers": {
     "senjaropay": {
       "command": "npx",
-      "args": ["-y", "github:YOUR_ORG/senjaropay-mcp"]
+      "args": ["-y", "github:klmartin/senjaropay-mcp"]
     }
   }
 }
@@ -132,7 +132,7 @@ If key/secret are missing (or environment is `mock`), tools return golden mock p
 ## Local development
 
 ```bash
-git clone https://github.com/YOUR_ORG/senjaropay-mcp.git
+git clone https://github.com/klmartin/senjaropay-mcp.git
 cd senjaropay-mcp
 npm install
 npm run build
@@ -143,7 +143,7 @@ Point your MCP config at the local build:
 ```json
 {
   "command": "node",
-  "args": ["/ABSOLUTE/PATH/TO/senjaropay-mcp/dist/index.js"]
+  "args": ["C:/Users/USER/Desktop/Projects/senjaropay-mcp/dist/index.js"]
 }
 ```
 
