@@ -4,7 +4,6 @@
 
 This MCP server exposes SenjaroPay merchant payment APIs to AI agents (Claude Desktop, Cursor, Windsurf). It returns high-fidelity mock responses by default and can call your live/sandbox API when credentials are configured.
 
-Inspired by [Tunzaa/tunzaa_mcp](https://github.com/Tunzaa/tunzaa_mcp).
 
 ## Instant Start
 
